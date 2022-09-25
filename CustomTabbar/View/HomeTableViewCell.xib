@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="CustomTabbar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FC1-Kr-3TE">
+                        <rect key="frame" x="15" y="4" width="297" height="99"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChatIcon" translatesAutoresizingMaskIntoConstraints="NO" id="BAp-uy-jEE">
+                                <rect key="frame" x="20" y="15" width="69" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BAp-uy-jEE" secondAttribute="height" id="xXa-6x-l27"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKo-fg-a8p">
+                                <rect key="frame" x="99" y="40" width="113" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.forward.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Bk-96-0Pd">
+                                <rect key="frame" x="222" y="22.5" width="55" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Bk-96-0Pd" secondAttribute="height" id="c2b-cE-6mG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Bk-96-0Pd" firstAttribute="centerY" secondItem="FC1-Kr-3TE" secondAttribute="centerY" id="0cU-2o-Ecc"/>
+                            <constraint firstItem="7Bk-96-0Pd" firstAttribute="width" secondItem="BAp-uy-jEE" secondAttribute="width" multiplier="0.8" id="18f-20-t9E"/>
+                            <constraint firstAttribute="trailing" secondItem="7Bk-96-0Pd" secondAttribute="trailing" constant="20" id="IpT-2D-hZI"/>
+                            <constraint firstItem="BAp-uy-jEE" firstAttribute="centerY" secondItem="FC1-Kr-3TE" secondAttribute="centerY" id="OeZ-R0-cDt"/>
+                            <constraint firstItem="BAp-uy-jEE" firstAttribute="top" secondItem="FC1-Kr-3TE" secondAttribute="top" constant="15" id="Woe-VO-ZGk"/>
+                            <constraint firstItem="7Bk-96-0Pd" firstAttribute="leading" secondItem="hKo-fg-a8p" secondAttribute="trailing" constant="10" id="e78-HR-KMM"/>
+                            <constraint firstItem="hKo-fg-a8p" firstAttribute="centerY" secondItem="FC1-Kr-3TE" secondAttribute="centerY" id="jGY-a4-U0g"/>
+                            <constraint firstItem="hKo-fg-a8p" firstAttribute="leading" secondItem="BAp-uy-jEE" secondAttribute="trailing" constant="10" id="xKh-g2-UOW"/>
+                            <constraint firstItem="BAp-uy-jEE" firstAttribute="leading" secondItem="FC1-Kr-3TE" secondAttribute="leading" constant="20" id="yR9-FC-7c8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FC1-Kr-3TE" secondAttribute="trailing" constant="15" id="Xgz-dg-bTl"/>
+                    <constraint firstAttribute="bottom" secondItem="FC1-Kr-3TE" secondAttribute="bottom" constant="4" id="YdS-Cs-9aI"/>
+                    <constraint firstItem="FC1-Kr-3TE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="c9F-6Z-pB0"/>
+                    <constraint firstItem="FC1-Kr-3TE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="y1s-Ka-12a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="FC1-Kr-3TE" id="ppR-R8-TyT"/>
+                <outlet property="forwordImageLogo" destination="7Bk-96-0Pd" id="SE2-3v-csI"/>
+                <outlet property="imageType" destination="BAp-uy-jEE" id="1tR-sD-2dM"/>
+                <outlet property="titleLabel" destination="hKo-fg-a8p" id="e65-1c-sWu"/>
+            </connections>
+            <point key="canvasLocation" x="142.75362318840581" y="96.763392857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ChatIcon" width="53.5" height="38.5"/>
+        <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
